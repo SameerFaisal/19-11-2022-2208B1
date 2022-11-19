@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function createNode(){
+        const para = document.createElement("p");
+        var input=prompt("Enter your text")
+        const text = document.createTextNode(input);
+        para.appendChild(text);
+        const element = document.getElementById("root");
+        element.appendChild(para);
+        para.setAttribute("class","para")
+        }
+        </script>
+</head>
+<body id="root">
+    <!DOCTYPE HTML>
+<html>
+<head>
+<title> Canvas </title>
+<script>
+window.onload = function()
+{
+var canvas = document.getElementById('mCanvas');
+var ctext = canvas.getContext('2d');
+ctext.beginPath();
+ctext.rect(18, 50, 200, 100);
+ctext.fillStyle = "DarkBlue";
+ctext.fill();
+};
+</script>
+</head>
+<body>
+<canvas id="mCanvas" width="578" height="200"></canvas>
+</body>
+</html>
+
+
+<button onclick="createNode()">createElement</button>
+
+    
+</body>
+</html>
